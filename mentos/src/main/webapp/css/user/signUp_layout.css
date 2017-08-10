@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+.commonSignUp {
+	padding-top:25px;
+	padding-bottom:25px;
+	width: 100%;
+
+	display : inline-block;
+	text-align: center;
+	font-size: 35pt;
+	font-weight: bold;
+}
+
+.div_wrap {
+    width:100%;
+    height:285px;
+    margin:0px auto;
+    margin-top:180px;
+    padding:0px; 
+    overflow:hidden;
+    background-color: #efefef;
+    text-align: center;
+    position: relative;
+}
+
+#button {
+	float:center;
+    color:black;
+    width:100%; 
+    height:100%;
+    text-align: center;
+    box-sizing:border-box;  
+}
+
+#button:after {content:""; clear:both; display:block;}
+    
+#button > div { 
+    float:left;
+    color:black;
+    width:50%; 
+    height:100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing:border-box;  
+}
+
+.div_wrap:hover #mentoBtn {
+  opacity: 0.3;
+}
+#mentoBtn:hover .mentoMiddle {
+  opacity: 1;
+}
+.mentoText {
+	background-color: #00354f;
+  	color: white;
+  	font-size: 16px;
+  	padding: 16px 32px;
+  	opacity:0.5;
+}
+.mentoMiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 28%;
+  transform: translate(-35%, -50%);
+  -ms-transform: translate(-30%, -50%)
+}
+
+
+.div_wrap:hover #menteeBtn {
+  opacity: 0.3;
+}
+#menteeBtn:hover .menteeMiddle {
+  opacity: 1;
+}
+.menteeText {
+	background-color: #00354f;
+  	color: white;
+  	font-size: 16px;
+  	padding: 16px 32px;
+  	opacity:0.5;
+}
+.menteeMiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-60%, -50%);
+  -ms-transform: translate(-60%, -50%)
+}
+
+#button > div:hover {color:#000000; background-color: #efefef;}
+
+#button > #mentoBtn {
+	text-align: right;
+	height:100%;
+	opacity : 0.8;
+	font-weight: bold;
+}
+#button > #menteeBtn {
+	text-align: left;
+	opacity : 0.8;
+	font-weight: bold;
+}
